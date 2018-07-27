@@ -40,7 +40,7 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
         
         self.btncart.layer.cornerRadius = self.btncart.frame.size.height/2
         
-            self.detailstableview.estimatedRowHeight = 200
+            self.detailstableview.estimatedRowHeight = 155
             self.detailstableview.sectionHeaderHeight = UITableViewAutomaticDimension
            self.detailstableview.reloadData()
                 
@@ -70,7 +70,7 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 155
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -118,7 +118,7 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
         let myMutableDict: NSMutableDictionary = NSMutableDictionary(dictionary: dict)
 
         let intIndexOfCategory: Int = cartarray.index(of: cartdict)
-        if intIndexOfCategory == 2147483647 || intIndexOfCategory == -1 {
+        if intIndexOfCategory == 4388744179 || intIndexOfCategory == -1 {
             myMutableDict["color"] = myMutableDict["color"]
             cartarray.add(myMutableDict)
             print("subarray===\(cartdict)")
